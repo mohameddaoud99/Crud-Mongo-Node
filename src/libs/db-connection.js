@@ -4,7 +4,7 @@ let db;
 
 module.exports = function connection() {
     if (!db) {
-        db = mongoose.createConnection('mongodb://mongo:27017/crud-example', {
+        db = mongoose.createConnection('mongodb://localhost:27017/crud-example', {
             useNewUrlParser: true
         });
     }
